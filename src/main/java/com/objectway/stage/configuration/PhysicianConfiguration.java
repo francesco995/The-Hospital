@@ -14,7 +14,7 @@ public class PhysicianConfiguration {
     private PhysicianRepository physicianRepository;
 
     @Bean
-    public PhysicianService getPhysicianService() {
+    public PhysicianService physicianService() {
         return new PhysicianService().physicianRepository(physicianRepository);
     }
 

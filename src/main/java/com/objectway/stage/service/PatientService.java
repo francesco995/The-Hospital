@@ -10,10 +10,10 @@ import javax.transaction.Transactional;
 import java.util.HashSet;
 import java.util.Set;
 
-@Service
+
 public class PatientService {
 
-    @Autowired
+
     private PatientRepository patientRepository;
 
     @Transactional
@@ -27,6 +27,8 @@ public class PatientService {
     }
 
 
-
-
+    public PatientService patientRepository(PatientRepository patientRepository) {
+        this.patientRepository = patientRepository;
+        return this;
+    }
 }

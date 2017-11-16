@@ -24,6 +24,7 @@
     <beans:bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
         <beans:property name="entityManagerFactory" ref="entityManagerFactory"/>
     </beans:bean>
+
     <jpa:repositories base-package="com.objectway.stage"/>
 
     <beans:bean id="entityManagerFactory"

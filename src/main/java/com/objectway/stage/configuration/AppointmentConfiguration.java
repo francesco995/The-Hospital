@@ -13,7 +13,7 @@ public class AppointmentConfiguration {
     AppointmentRepository appointmentRepository;
 
     @Bean
-    public AppointmentService getAppointmentService() {
+    public AppointmentService appointmentService() {
 
         return new AppointmentService().appointmentRepository(appointmentRepository);
 

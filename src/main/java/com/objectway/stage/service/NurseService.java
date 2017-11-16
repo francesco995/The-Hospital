@@ -9,10 +9,9 @@ import javax.transaction.Transactional;
 import java.util.HashSet;
 import java.util.Set;
 
-@Service
+
 public class NurseService {
 
-    @Autowired
     private NurseRepository nurseRepository;
 
 
@@ -26,4 +25,8 @@ public class NurseService {
         return nurses;
     }
 
+    public NurseService nurseRepository(NurseRepository nurseRepository) {
+        this.nurseRepository = nurseRepository;
+        return this;
+    }
 }
